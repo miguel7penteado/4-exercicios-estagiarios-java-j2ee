@@ -228,7 +228,9 @@ public class ClienteEJBRemoto
 
 ```
 
-Propriedades do WildFly 8.0
+Propriedades de EJB no WildFly 8.0
+
+Arquivo jboss-ejb-client.properties
 
 ```xml
 
