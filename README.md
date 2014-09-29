@@ -1,10 +1,11 @@
 
 # Aplicação Cliente Servidor J2EE
 
-## Lador Servidor 
+## Lado Servidor 
 ### Exemplo de EJB Sem Estado Remoto
 
 ***
+Interface CalculadoraRemota.java
 ```java
 package miguel.servidor.remoto.sem_estado;
 
@@ -18,7 +19,7 @@ public interface CalculadoraRemota
 }
 
 ```
-
+Classe Calculadora.java
 ```java
 package miguel.servidor.remoto.sem_estado;
 
@@ -49,7 +50,7 @@ public class Calculadora implements CalculadoraRemota
 ```
 
 ### Exemplo de EJB Com Estado Remoto
-
+Interface ContadorRemoto.java
 ```java
 package miguel.servidor.remoto.com_estado;
 
@@ -63,7 +64,7 @@ public interface ContadorRemoto
 }
 
 ```
-
+Classe Contador.java
 ```java
 package miguel.servidor.remoto.com_estado;
 
@@ -104,7 +105,7 @@ public class Contador implements ContadorRemoto
 
 ***
 ## Lado Cliente
-
+Classe ClienteRemoto.java
 ```java
 package miguel.cliente.remoto;
 
@@ -227,7 +228,7 @@ public class ClienteEJBRemoto
 
 ```
 
-Propriedades
+Propriedades do WildFly 8.0
 
 ```xml
 
