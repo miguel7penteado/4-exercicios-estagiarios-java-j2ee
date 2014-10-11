@@ -4,6 +4,22 @@
 ## Lado Servidor 
 ### Exemplo de EJB Sem Estado Remoto
 
+Caso você esteja usando o maven, para este projeto, teremos as seguintes dependências:
+
+A biblioteca **jboss-annotations-api_1.2_spec**
+para fazer esta importação:
+```java
+import javax.annotation
+```
+A biblioteca **jboss-ejb-api_3.2_spec**
+para fazer esta importação:
+```java
+import javax.ejb
+```
+
+Este projeto é uma tradução para o português do projeto https://github.com/wildfly/quickstart/tree/master/ejb-remote
+
+
 ***
 Interface CalculadoraRemota.java
 ```java
