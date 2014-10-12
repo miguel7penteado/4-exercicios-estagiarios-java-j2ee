@@ -1,9 +1,18 @@
 
-# Aplicação Cliente Servidor J2EE
+# Aplicação Cliente Servidor J2EE - Interface Remota - IIOP
+
+![](https://lh3.googleusercontent.com/-m7XWvK0733w/VDnnjOkrXdI/AAAAAAAAB40/WFqGRPEiuVA/w888-h308-no/ClienteServidor.jpeg)
+
+Este projeto é uma tradução para o português do projeto https://github.com/wildfly/quickstart/tree/master/ejb-remote
 
 ## Lado Servidor 
-### Exemplo de EJB Sem Estado Remoto
+![](https://lh5.googleusercontent.com/-z5nHS1CzypA/VDnqPPlDknI/AAAAAAAAB5Q/CtA9Vjy51Q8/w370-h306-no/Servidor.jpg)
 
+O programa servidor irá ser carregado em um ambiente Servidor J2EE versão 7 ( container ) com suporte a ivocação de métodos remotos ativado.
+Escolhi, por conveniência, o Red Hat WildFly 8.1 final.
+
+### Exemplo de EJB Sem Estado Remoto
+###Dependências:
 Caso você esteja usando o maven, para este projeto, teremos as seguintes dependências:
 
 A biblioteca **jboss-annotations-api_1.2_spec**
@@ -16,8 +25,6 @@ para fazer esta importação:
 ```java
 import javax.ejb
 ```
-
-Este projeto é uma tradução para o português do projeto https://github.com/wildfly/quickstart/tree/master/ejb-remote
 
 
 ***
@@ -121,6 +128,8 @@ public class Contador implements ContadorRemoto
 
 ***
 ## Lado Cliente
+![](https://lh6.googleusercontent.com/-wosJZGncLXA/VDnqPNDSmBI/AAAAAAAAB5M/WR3aibfbdeE/w370-h308-no/Cliente.jpg)
+
 Classe ClienteRemoto.java
 ```java
 package miguel.cliente.remoto;
